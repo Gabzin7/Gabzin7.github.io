@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - Living Psycology</title>
+        <link rel="icon" type="image/png" href="img/index/icon.png">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <style>
+            body {
+                background-color: antiquewhite;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding: 0;
+            }
+            nav {
+                position: relative;
+                left: 500px;
+                top: -70px;
+                width: 450px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                margin: 0 4px;
+                transition: color 0.6s ease, transform 0.6s ease;
+            }
+            #emcima{
+                position:relative;
+                top:10px; 
+            }
+
+
+            footer {
+                background-color: #333;
+                color: #ffffff;
+                margin: -10px;
+                padding: 5px 5px;
+                text-align: center;
+                position: fixed;
+                width: 100%;
+                z-index: 1000;
+            }
+
+            header {
+                top: 0;
+                margin: -8px;
+                background-color: #333;
+                color: #f8f8f8;
+                padding: 5px 1px;
+                position: fixed;
+                height: 100px;
+                width: 100%;
+                top: -25px;
+                z-index: 1000;
+            }
+
+            footer {
+                bottom: 0;
+            }
+
+            main {
+                padding: 50px 20px 80px;
+            }
+
+            .login-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .login-container h2 {
+                margin-bottom: 20px;
+            }
+
+            .login-container input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .login-container button {
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .login-container button:hover {
+                background-color: #555;
+            }
+
+            .login-container a {
+                display: block;
+                margin-top: 10px;
+                text-decoration: none;
+                color: #333;
+            }
+
+            #sub{
+                position: relative;
+                bottom: 20px;
+
+            }
+
+            #login{
+                position: relative;
+                left: 950px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+            <header>
+                <h1> <i><a href="index.html" id="emcima"  > Living</a> </i></h1>
+                <h1 id="sub"> <i> <small><a href="index.html">  psycology </a> </small></i></h1>
+                <nav>
+                    <a href="login.html" id="login">Login</a>
+                    <a href="perguntas_frequentes.html">Perguntas Frequentes</a>
+                    <a id="cn" href="canais_atendimento.html">Canais de Atendimento</a>
+                </nav>
+            </header>
+        <div class="login-container">
+            <h2>Login</h2>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <button>Entrar</button>
+            
+            
+        </div>
+        <footer>
+            
+            <p>Living Psycology &copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+    </body>
+
+</html>

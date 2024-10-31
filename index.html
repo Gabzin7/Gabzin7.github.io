@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <title>Living Psycology</title>
+        <link rel="icon" type="image/png" href="icon.png">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+         <style>
+            body {
+                background-color: antiquewhite;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding: 0px;
+            }
+
+            footer {
+                background-color: #333;
+                color: #ffffff;
+                margin: -10px;
+                padding: 5px 5px;
+                text-align: center;
+                position: relative;
+                width: 100%;
+                left: 5px;
+                z-index: 1000;
+            }
+
+            header {
+                top: 0;
+                margin: -8px;
+                background-color: #333;
+                color: #f8f8f8;
+                position: fixed;
+                height: 100px;
+                width: 100%;
+                top: -25px;
+                z-index: 1000;
+            }
+
+            footer {
+                bottom: 0;
+            }
+
+            /* Ajustar o padding para evitar sobreposição de conteúdo */
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                margin: 0 4px;
+                transition: color 0.6s ease, transform 0.6s ease;
+            }
+
+            
+            
+
+            /* Cor e escala na animação do link */
+            .carousel {
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+            }
+
+            /* Definindo altura do carrossel */
+            .carousel img {
+                width: 100%;
+                height: auto;
+                flex-shrink: 0;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .health-section {
+                margin: 20px 0;
+            }
+
+            .health-section img {
+                width: 100%;
+                max-width: 600px;
+                display: block;
+                margin: 10px auto;
+            }
+
+            h1 {
+                color: #ffffff;
+            }
+
+            nav {
+                position: relative;
+                left: 500px;
+                top: -70px;
+                width: 450px;
+            }
+
+           
+
+            
+
+            #primeiro {
+                position: relative;
+                top: 20px;
+                width: 500px;
+            }
+
+            #segundo {
+                position: relative;
+                top: 20px;
+                width: 500px;
+            }
+
+            #terceiro {
+                position: relative;
+                top: 20px;
+                width: 500px;
+            }
+
+            h2 {
+                color: rgb(0, 0, 0);
+                position: relative;
+                left: 650px;
+                background-color: none #a08c8c;
+                width: 130px;
+            }
+
+            .tex {
+                position: relative;
+                left: 100px;
+                width: 350px;
+                background-color: antiquewhite;
+            }
+
+            .lo {
+                position: relative;
+                left: 80px;
+                height: 100px;
+                width: 400px;
+                background-color: antiquewhite;
+                border: #333 solid 3px;
+                border-radius: 20px;
+            }
+
+
+            h3 {
+                position: relative;
+                bottom: 400px;
+                left: 300px;
+                width: 700px;
+                background-color: antiquewhite;
+            }
+
+            section {
+                background-color: antiquewhite;
+            }
+
+            #top {
+                position: absolute;
+            }
+
+            .img {
+                position: relative;
+                left: 600px;
+                bottom: 700px;
+                border: #333 solid 5px;
+                border-radius: 20px;
+            }
+
+            #login{
+                position: relative;
+                left: 1000px;
+            }
+
+            .es{
+                width: 650px;
+            }
+
+            .tudao{
+                position: relative;
+                text-align: justify;
+                left: 700px;
+                top: 400px;
+               color: #333;
+                width: 500px;
+            }
+            .yas{
+                position: relative;
+                width: 520px;
+                padding: 5px;
+                top: 100px;
+            }
+
+            #emcima{
+                position:relative;
+                top:10px; 
+            }
+            #subs{
+                position: relative;
+                bottom: 20px;
+            }
+
+            #sobrenos{
+                position: relative;
+                color: black;
+                text-align: center;
+                bottom: -50px;
+                right:30px  ;
+            }
+
+            .oi{
+                position: relative;
+                bottom: -100px;
+                padding: 10px;
+                width: 300px;
+                height: auto;
+                left: 100px;
+                text-align: center;
+                color: black;
+
+                
+            }
+
+            .oi2{
+                position: relative;
+                padding: 10px;
+                width: 300px;
+                height: auto;
+                left: 100px;
+                text-align: center;
+                left: 640px;
+                bottom: 200px;
+                color: black;
+                
+            }
+
+            .oi3{
+                position: relative;
+                padding: 10px;
+                width: 300px;
+                height: auto;
+                left: 100px;
+                text-align: center;
+                left: 1200px;
+                bottom: 480px;
+                color: black;
+                
+            }
+            
+
+            .somos{
+                color: black;
+                text-align: center;
+            }
+
+            .valores{
+                color: black;
+            }
+
+            .objetivo{
+                color: black;
+            }
+         </style>
+    </head>
+
+    <body>
+        <header>
+            <h1> <i><a href="index.html" id="emcima"  > Living</a> </i></h1>
+            <h1> <i> <small><a href="index.html" id="subs">psycology</a> </small></i></h1>
+            <nav>
+                <a href="login.html" id="login">Login</a>
+                <a href="perguntas_frequentes.html">Perguntas Frequentes</a>
+                <a id="cn" href="canais_atendimento.html">Canais de Atendimento</a>
+            </nav>
+        </header>
+        <main>
+            <div class="carousel">
+                <img src="mental.png" alt="mental">
+                <img src="" alt="Imagem 2">
+                <img src="" alt="Imagem 3">
+            </div>
+                <h2></h2>
+                
+
+                <h1 id="sobrenos">Sobre Nós</h1>
+
+                <div style="border: #333 solid 2px;
+                border-radius: 20px;" class="oi">
+                <h1 class="somos">Somos</h1>
+                <p class="conteudo">Na Living Psicology, acreditamos que a saúde mental é fundamental para o bem-estar e desenvolvimento pessoal. Nossa equipe é composta por profissionais qualificados e apaixonados pela psicologia, dedicados a oferecer um espaço acolhedor e seguro para todos os nossos clientes.
+                </p>
+
+                
+                </div>
+
+                <div style="border: #333 solid 2px;
+                border-radius: 20px;" class="oi2">
+                <h1 class="objetivo">Objetivo</h1>
+                <p>
+                    Nosso objetivo é proporcionar suporte psicológico de qualidade, ajudando indivíduos a enfrentar desafios emocionais, superar dificuldades e promover o autoconhecimento. Utilizamos abordagens baseadas em evidências, adaptadas às necessidades de cada pessoa, visando o fortalecimento da saúde mental e emocional.
+
+                </p>
+
+                </div>
+                
+                <div style="border: #333 solid 2px;
+                border-radius: 20px;" class="oi3">
+                <h1 class="valores">Valores</h1>
+                <p>
+                    Valorizamos a ética, a empatia e a confidencialidade em todas as nossas interações. Juntos, trabalhamos para criar um ambiente onde todos se sintam à vontade para explorar suas emoções e buscar o crescimento pessoal.
+
+                </p>
+
+                </div>
+
+                <p></p>
+
+        </main>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.carousel img');
+            setInterval(() => {
+                images[currentIndex].style.transform = `translateX(-${100 * currentIndex}%)`;
+                currentIndex = (currentIndex + 1) % images.length;
+            }, 3000);
+        </script>
+    </body>
+        <footer>
+            <p>Living Psycology &copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+    </body>
+
+</html>
